@@ -22,6 +22,8 @@ class Celular {
    * @param qtd Quantidade de celulares do lote. Ex: 10 unidades.
    * @param valor Valor unitario do celular. Ex: R$ 756.25.
    */
+
+
   Celular(std::string modelo,
           std::string fabricante,
           int armazenamento,
@@ -42,9 +44,19 @@ class Celular {
   bool operator<(const Celular& other);
 
  public:
-  // TODO: Declare aqui as variaveis da classe.
+        std::string modelo;
+        std::string fabricante;
+        int armazenamento;
+        int memoria;
+        double peso;
+        std::string cor;
+        int qtd;
+        float valor;
+        int cod;
+        // TODO: Declare aqui as variaveis da classe.
 
  private:
+        static int id;
   // TODO: Declare aqui uma variavel estatica para atribuir os codigos dos
   // celulares. Lembre-se que o primeiro celular recebe o codigo 1, o
   // segundo recebe o codigo 2, e assim sucessivamente.
